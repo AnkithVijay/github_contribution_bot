@@ -3,6 +3,13 @@ const moment = require("moment");
 const simpleGit = require("simple-git");
 const random = require("random");
 const FILE_PATH = "./data.json";
+require('dotenv');
+
+const USER = process.env.USER;
+const PASS = process.env.PASS;
+const REPO = process.env.REPO;
+
+const remote = `https://${USER}:${PASS}@${REPO}`;
 
 const makeCommit = (n) => {
   if (n === 0) return simpleGit().push();
@@ -17,7 +24,6 @@ const makeCommit = (n) => {
   const data = {
     date: DATE,
   };
-  console.log(DATE);
   jsonfile.writeFile(FILE_PATH, data, () => {
     try{
       simpleGit()
