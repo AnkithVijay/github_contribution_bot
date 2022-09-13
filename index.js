@@ -19,10 +19,15 @@ const makeCommit = (n) => {
   };
   console.log(DATE);
   jsonfile.writeFile(FILE_PATH, data, () => {
-    simpleGit()
-      .add([FILE_PATH])
-      .commit(DATE, { "--date": DATE }, makeCommit.bind(this, --n))
-      .push();
+    try{
+      simpleGit()
+        .add([FILE_PATH])
+        .commit(DATE, { "--date": DATE }, makeCommit.bind(this, --n))
+        .push();
+    }catch(e){
+      console.log(e);
+    }
+    
   });
 };
 makeCommit(120);

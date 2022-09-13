@@ -52,5 +52,5 @@ Difference of commits between timestamps. Less the value of days, more dense the
 
 ## 📞 Contact me  
 
-For Queries: [My Instagram Profile](https://www.instagram.com/utsanjan/)  
-[Check Out My YouTube Channel](https://www.youtube.com/DopeSatan)
+For Queries: [My Telegram Account](https://t.me/vijay_1993)  
+[Check Out My Twitter Account](https://twitter.com/vijay_ankith)
